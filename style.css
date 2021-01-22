@@ -10,7 +10,7 @@ body {
 }
 .introBox {
     display: flex;
-    min-height: 30vh;
+    min-height: 20vh;
     justify-content: center;
     align-items: center;
     font-size: 30px;
@@ -25,6 +25,7 @@ body {
     min-height: 40vh;
     justify-content: center;
     align-items: flex-start;
+    padding-top: 20px;
 }
 .selectorTextBox {
     font-size: 20px;
@@ -42,12 +43,34 @@ body {
 .secondSelectorBox {
     position: absolute;
     margin: 35px;
+}
+
+.thirdSelectorBox {
+    position: absolute;
+    margin:35px;
+}
+.fruitPic {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 60vh;
+    width: 60vw;
+}
+
+.bottomText {
     
 }
 
+/* img {
+    height: 324px;
+    width: 430px;
+} */
+
 .refreshBox {
     display: flex;
-    align-items: center;
+    align-items: flex-end;
     justify-content: center;
-    min-height: 30vh;
+    min-height: 35vh;
 }
+
