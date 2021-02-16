@@ -71,6 +71,10 @@ body {
     font-size: 10px;
 }
 
+img {
+    width: 230px;
+}
+
 @media (min-width: 600px) {
     .introBox {
         font-size: 30px;
