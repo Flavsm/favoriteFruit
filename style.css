@@ -7,13 +7,15 @@
 body {
     font-family: 'Fredericka the Great', cursive;
     background-color: whitesmoke;
+    height: 100vh;
+    max-height: 100vh;
 }
 .introBox {
     display: flex;
     min-height: 20vh;
     justify-content: center;
     align-items: center;
-    font-size: 30px;
+    font-size: 15px;
 }   
 
 .introText {
@@ -28,7 +30,7 @@ body {
     padding-top: 20px;
 }
 .selectorTextBox {
-    font-size: 20px;
+    font-size: 10px;
     align-content: flex-start;
 }
 
@@ -54,23 +56,33 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-    height: 60vh;
-    width: 60vw;
+    max-height: 70vh;
+    width: 60vw;  
 }
 
-.bottomText {
-    
+img {
+    height: 250px;
 }
-
-/* img {
-    height: 324px;
-    width: 430px;
-} */
-
 .refreshBox {
     display: flex;
     align-items: flex-end;
     justify-content: center;
     min-height: 35vh;
+    font-size: 10px;
 }
 
+@media (min-width: 600px) {
+    .introBox {
+        font-size: 30px;
+    }
+    .selectorTextBox {
+        font-size: 20px;
+    }
+    .refreshBox {
+        font-size: 25px;
+    }
+    img {
+        height: 400px;
+    }
+
+}

@@ -26,17 +26,17 @@ const removeSelectorText = document.getElementById('selectortext');
 
 //Evenet Listeners
 
-sweetSour.addEventListener('click', firstQuestion);
-fruitColors.addEventListener('click', secondQuestionOne);
-seasonalAllSeason.addEventListener('click', secondQuestionTwo);
-seedNoseed.addEventListener('click', thirdQuestionOne);
-secondFruitColors.addEventListener('click', thirdQuestionTwo);
+sweetSour.addEventListener('change', firstQuestion);
+fruitColors.addEventListener('change', secondQuestionOne);
+seasonalAllSeason.addEventListener('change', secondQuestionTwo);
+seedNoseed.addEventListener('change', thirdQuestionOne);
+secondFruitColors.addEventListener('change', thirdQuestionTwo);
 
 //Functions
 
 //after fist selection, create new options
 function firstQuestion(e) {
-
+    
     //sweet was chosen
     switch (e.target.value) {
         case "sweet":
@@ -48,7 +48,7 @@ function firstQuestion(e) {
             //append new select to the original Div 
             fruitColors.appendChild(secondQuestionPart1);
             //add Orange and Yellow options to the new select
-            secondQuestionPart1.innerHTML = '<option selected>Choose</option> <option value="orange">Orange</option> <option value="yellow">Yellow</option>';
+            secondQuestionPart1.innerHTML = '<option selected>Pick</option> <option value="orange">Orange</option> <option value="yellow">Yellow</option>';
             //remove sweet and sour select
             removeFirstSelect.remove();
             //change original text of p for the new question
@@ -64,7 +64,7 @@ function firstQuestion(e) {
             //append new select to the original Div
             seasonalAllSeason.appendChild(secondQuestionPart2);
             //add Peal or No peal options to the new select
-            secondQuestionPart2.innerHTML = "<option selected>Choose</option> <option value='allseason'>All-season</option> <option value='seasonal'> Seasonal</option>";
+            secondQuestionPart2.innerHTML = "<option selected>Pick</option> <option value='allseason'>All-season</option> <option value='seasonal'> Seasonal</option>";
             //remove sweet and sour select
             removeFirstSelect.remove();
             document.getElementById('selectortext').textContent = "Now pick All-season or Seasonal:";
@@ -83,7 +83,7 @@ function secondQuestionOne(e) {
             thirdQuestionPart1.id = 'thirdquestionpart1';
             //append new select to the original Div
             seedNoseed.appendChild(thirdQuestionPart1);
-            thirdQuestionPart1.innerHTML = "<option selected>Choose</option> <option value='noseedorange'>One/No Seed</option> <option value='seedorange'>Multiple Seeds</option>";
+            thirdQuestionPart1.innerHTML = "<option selected>Pick</option> <option value='noseedorange'>One/No Seed</option> <option value='seedorange'>Multiple Seeds</option>";
             const removeSecondSelectPart1 = document.getElementById('secondselectpart1');
             removeSecondSelectPart1.remove();
             document.getElementById('selectortext').textContent = "Now pick One/No Seed or Multiple Seeds:";
@@ -93,7 +93,7 @@ function secondQuestionOne(e) {
             thirdQuestionPart2.classList.add('thirdQuestionPart2');
             thirdQuestionPart2.id = 'thirdquestionpart2';
             seedNoseed.appendChild(thirdQuestionPart2);
-            thirdQuestionPart2.innerHTML = "<option selected>Choose</option> <option value='noseedyellow'>One/No Seed</option> <option value='seedyellow'>Multiple Seeds</option>";
+            thirdQuestionPart2.innerHTML = "<option selected>Pick</option> <option value='noseedyellow'>One/No Seed</option> <option value='seedyellow'>Multiple Seeds</option>";
             const removeSecondSelectPart2 = document.getElementById('secondselectpart1');
             removeSecondSelectPart2.remove();
             document.getElementById('selectortext').textContent = "Now pick One/No Seed or Multiple Seeds:";
@@ -109,7 +109,7 @@ function secondQuestionTwo(e) {
             thirdQuestionPart3.classList.add('thirdQuestionPart3');
             thirdQuestionPart3.id = 'thirdquestionpart3';
             secondFruitColors.appendChild(thirdQuestionPart3);
-            thirdQuestionPart3.innerHTML = '<option selected>Choose</option> <option value="allseasonred">Red</option> <option value="allseasongreen">Green</option>';
+            thirdQuestionPart3.innerHTML = '<option selected>Pick</option> <option value="allseasonred">Red</option> <option value="allseasongreen">Green</option>';
             const removeSecondSelectPart3 = document.getElementById('secondselectpart2');
             removeSecondSelectPart3.remove();
             document.getElementById('selectortext').textContent = "Now pick Red or Green:";
@@ -119,7 +119,7 @@ function secondQuestionTwo(e) {
             thirdQuestionPart4.classList.add('thirdQuestionPart4');
             thirdQuestionPart4.id = 'thirdquestionpart4';
             secondFruitColors.appendChild(thirdQuestionPart4);
-            thirdQuestionPart4.innerHTML = '<option selected>Choose</option> <option value="seasonalorange">Orange</option> <option value="seasonalyellow">Yellow</option>';
+            thirdQuestionPart4.innerHTML = '<option selected>Pick</option> <option value="seasonalorange">Orange</option> <option value="seasonalyellow">Yellow</option>';
             const removeSecondSelectPart4 = document.getElementById('secondselectpart2');
             removeSecondSelectPart4.remove();
             document.getElementById('selectortext').textContent = "Now pick Orange or Yellow:";
