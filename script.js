@@ -141,7 +141,7 @@ function thirdQuestionOne(e) {
         removeSelectorText.remove();
     //picture of melon
     } else if (e.target.value === 'seedyellow') {
-        finalDiv.innerHTML = '<img src="https://tinyurl.com/y5ad6nwb" width="200" >'
+        finalDiv.innerHTML = '<img src="https://tinyurl.com/y5ad6nwb">'
             + '</img><p class="bottomText">HONEYDEW MELON IS YOUR FAVOURITE FRUIT!</p>';
         const removeThirdSelectPart2 = document.getElementById('thirdquestionpart2');
         removeThirdSelectPart2.remove();
