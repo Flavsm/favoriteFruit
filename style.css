@@ -60,9 +60,6 @@ body {
     width: 60vw;  
 }
 
-img {
-    height: 100px;
-}
 .refreshBox {
     display: flex;
     align-items: flex-end;
