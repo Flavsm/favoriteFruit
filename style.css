@@ -65,9 +65,9 @@ body {
 
 .refreshBox {
     display: flex;
-    align-items: center;
+    align-items: flex-end;
     justify-content: center;
-    min-height: 35vh;
+    min-height: 25vh;
     font-size: 10px;
 }
 
@@ -84,7 +84,7 @@ img {
     }
     .refreshBox {
         font-size: 25px;
-        align-items: flex-end;
+        min-height: 35vh;
     }
     img {
         height: 400px;
