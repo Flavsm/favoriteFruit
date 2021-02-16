@@ -16,10 +16,13 @@ body {
     justify-content: center;
     align-items: center;
     font-size: 15px;
+    text-justify: center;
+    text-align-last: left;
+    padding-top: 10px;
 }   
 
 .introText {
-    width: 50vw;
+    width: 70vw;
 }
 
 .selectorBox {
@@ -62,7 +65,7 @@ body {
 
 .refreshBox {
     display: flex;
-    align-items: flex-end;
+    align-items: center;
     justify-content: center;
     min-height: 35vh;
     font-size: 10px;
@@ -77,9 +80,13 @@ body {
     }
     .refreshBox {
         font-size: 25px;
+        align-items: flex-end;
     }
     img {
         height: 400px;
+    }
+    .introText {
+        width: 50vw;
     }
 
 }
