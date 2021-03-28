@@ -1,2 +1,2 @@
 # favoriteFruit
-simple js app to tell you what is your favorite fruit
+web app to tell user's favorite fruit
